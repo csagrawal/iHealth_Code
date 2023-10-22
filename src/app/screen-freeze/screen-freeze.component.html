@@ -1,0 +1,11 @@
+<!-- <p>Screen freeze component</p> -->
+<div *ngIf="isTimerOn; else continueWork"> 
+    <p>Time for some eye exercise !!!</p>    
+    <app-i-exercise></app-i-exercise>
+</div>
+<ng-template #continueWork>
+    <div>
+        <p>Continue work !!</p>
+    </div>
+</ng-template>
+

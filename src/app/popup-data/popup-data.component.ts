@@ -19,7 +19,6 @@ export class PopupDataComponent implements OnInit {
     this.dataService.fetchDataFromBackend().subscribe(
       (response) => {
         this.data = response;
-        // Open your popup here with the received data
         this.openPopup();
       },
       (error) => {
@@ -29,9 +28,6 @@ export class PopupDataComponent implements OnInit {
   }
 
   openPopup() {
-    // Implement your popup logic here using the received data
-    // You can use Angular Material Dialog or a custom modal component
     console.log('Data received from the backend:', this.data);
-    // Open the popup with the received data
   }
 }
